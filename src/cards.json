@@ -1,0 +1,32 @@
+[{
+    "id":1,
+    "image":"./images/abe1.png"
+},
+{
+    "id": 2,
+    "image": "./images/ali1.png"
+},
+{
+    "id": 3,
+    "image": "./images/babe1.png"
+},
+{
+    "id": 4,
+    "image": "./images/einstein1.png"
+},
+{
+    "id": 5,
+    "image": "./images/elvis1.png"
+},
+{
+    "id": 6,
+    "image": "./images/lennon1.png"
+},
+{
+    "id": 7,
+    "image": "./images/marilyn1.png"
+},
+{
+    "id": 8,
+    "image": "./images/mlk1.png"
+}]
