@@ -1,32 +1,75 @@
-[{
-    "id":1,
-    "image":"./images/abe1.png"
-},
-{
+[
+  {
+    "id": 1,
+
+    "image": [
+      "./images/abe1.png",
+      "./images/abe2.png",
+      "./images/abe3.png",
+      "./images/abe4.png"
+    ]
+  },
+  {
     "id": 2,
-    "image": "./images/ali1.png"
-},
-{
+    "image": [
+      "./images/ali1.png",
+      "./images/ali2.png",
+      "./images/ali3.png",
+      "./images/ali4.png"
+    ]
+  },
+  {
     "id": 3,
-    "image": "./images/babe1.png"
-},
-{
+    "image": [
+      "./images/babe1.png",
+      "./images/babe2.png",
+      "./images/babe3.png",
+      "./images/babe4.png"
+    ]
+  },
+  {
     "id": 4,
-    "image": "./images/einstein1.png"
-},
-{
+   "image": [
+      "./images/einstein1.png",
+      "./images/einstein2.png",
+      "./images/einstein3.png",
+      "./images/einstein4.png"
+    ]
+  },
+  {
     "id": 5,
-    "image": "./images/elvis1.png"
-},
-{
+    "image": [
+        "./images/elvis1.png",
+        "./images/elvis2.png",
+        "./images/elvis3.png",
+        "./images/elvis4.png"
+    ]
+  },
+  {
     "id": 6,
-    "image": "./images/lennon1.png"
-},
-{
+    "image": [
+        "./images/lennon1.png",
+        "./images/lennon2.png",
+        "./images/lennon3.png",
+        "./images/lennon4.png"
+    ]
+  },
+  {
     "id": 7,
-    "image": "./images/marilyn1.png"
-},
-{
+    "image": [
+        "./images/marilyn1.png",
+        "./images/marilyn2.png",
+        "./images/marilyn3.png",
+        "./images/marilyn4.png"
+    ]
+  },
+  {
     "id": 8,
-    "image": "./images/mlk1.png"
-}]
+    "image": [
+        "./images/mlk1.png",
+        "./images/mlk2.png",
+        "./images/mlk3.png",
+        "./images/mlk4.png"
+    ]
+  }
+]

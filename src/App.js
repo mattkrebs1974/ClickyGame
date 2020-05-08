@@ -13,10 +13,11 @@ clickedFacesIds: [],
 score:0,
 goal:8,
 status: "",
-imagenumber:1
+imagenumber:0
 };
 
 shuffleScoreCard = id => {
+  this.setState({ imagenumber: this.state.imagenumber > 2 ? 0 : this.state.imagenumber+1})
   let clickedFacesIds = this.state.clickedFacesIds;
 
   if(clickedFacesIds.includes(id)){
@@ -33,7 +34,7 @@ shuffleScoreCard = id => {
   for (let i = faces.length -1; i>0;i--){
     let j = Math.floor(Math.random() * (i+1));
     [faces[i], faces[j]] = [faces[j], faces[i]]; 
-
+console.log(faces);
   }
   }
   }
@@ -56,7 +57,7 @@ return(
           shuffleScoreCard={this.shuffleScoreCard}
           id={face.id}
           key={face.id}
-          image={face.image}
+          image={face.image[this.state.imagenumber]}
         />
       ))}
     </Wrapper>
