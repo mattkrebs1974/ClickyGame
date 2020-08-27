@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Score from "./components/Score";
-import faces from "./cards.json";
+import waces from "./cards.json";
 import "./App.css";
 
 class App extends Component {
 
 state ={
-faces,
+waces,
 clickedFacesIds: [],
 score:0,
 goal:8,
@@ -29,14 +29,16 @@ shuffleScoreCard = id => {
     return;
   
   } 
-  this.setState({faces,clickedFacesIds,score:clickedFacesIds.length,status: " "});
+  this.setState({waces,clickedFacesIds,score:clickedFacesIds.length,status: " "});
 
-  for (let i = faces.length -1; i>0;i--){
+  for (let i = waces.length -1; i>0;i--){
     let j = Math.floor(Math.random() * (i+1));
-    [faces[i], faces[j]] = [faces[j], faces[i]]; 
-console.log(faces);
-  }
-  }
+
+    //reorganizes json file
+    [waces[i], waces[j]] = [waces[j], waces[i]]; 
+
+console.log("this is the changing order of faces right here"+ waces[i].image) ;
+  }}
   }
   render() {
 return(
@@ -52,11 +54,12 @@ return(
       status={this.state.status}
     />
     <Wrapper>
-      {this.state.faces.map(face => (
+      {this.state.waces.map(face => (
         <Card
           shuffleScoreCard={this.shuffleScoreCard}
           id={face.id}
           key={face.id}
+          name={face.name}
           image={face.image[this.state.imagenumber]}
         />
       ))}
