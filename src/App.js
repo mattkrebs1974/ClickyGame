@@ -19,7 +19,6 @@ imagenumber:0
 shuffleScoreCard = id => {
   this.setState({ imagenumber: this.state.imagenumber > 2 ? 0 : this.state.imagenumber+1})
   let clickedFacesIds = this.state.clickedFacesIds;
-
   if(clickedFacesIds.includes(id)){
     this.setState({clickedFacesIds: [], score:0, status: "Game Over! You lost. Click to play again!"});
     return;
@@ -44,7 +43,7 @@ console.log("this is the changing order of faces right here"+ waces[i].image) ;
 return(
 <div className="App">
     <header className="App-header">
-      <h1 className="App-title">Clicky Game</h1>
+      <h1 className="App-title">Memory Game</h1>
       <p className="App-intro">
         Try not to click the same person twice!
           </p>
