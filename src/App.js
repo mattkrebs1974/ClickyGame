@@ -45,7 +45,7 @@ return(
     <header className="App-header">
       <h1 className="App-title">Memory Game</h1>
       <p className="App-intro">
-        Try not to click the same person twice!
+        Try not to click the same famous person twice!
           </p>
     </header>
     <Score total={this.state.score}
